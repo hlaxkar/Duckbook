@@ -110,7 +110,7 @@ if ( !isset( $_SESSION[ 'username' ] ) && $_SESSION[ 'uid' ] == "" ) //---------
   <div class="row" style="width: 100%">
     <div class="ui-block">
       <div class="top-header">
-        <div class="top-header-thumb" style="width: auto; height: 450px; overflow: hidden;">
+        <div class="top-header-thumb" style="width: auto; height: 450px; overflow: hidden; ">
 			<a href="updatepic.php"> <img src="<?php if(isset($user['header']) && $user['header']!=""){echo $user['header'];} else{echo "img/top-header2.jpg";} ?>" alt="Header"></a>
         </div>
         <div class="profile-section">
